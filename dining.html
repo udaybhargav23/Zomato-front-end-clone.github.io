@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato food delivery website</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEXiN0T////hMD7iNULhKjnhLDvhLz3hIzThJzfhKjrgGy7gHzHgFSrhJTXgHjDgGCz++fnobXTunqLlVl/65OXnZW3wq6/zur330dP98vP87e7sjpPyt7r419n30tTpdn3kSlXrhYv53d/1xcfqfYPriY/tl5zmXmf0wcPjQ0/wpqrxsLTkUFrfCiTmYWnum5/eABCIl7loAAAJNklEQVR4nO2d53Lrug5GRVK9Sy5x73bcs9//6Q6LCijJse/ck505Hqx/oUQRYPkAUhnLICTNe8x4R1gvTwkxyCYw39NB7qIZbIiRBu/qn4AFqZGbv23Fj2LmxpuuwRLWM97bQePt/UMQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEH+DvS9f9iKmeHyjX+7i1n+aTgm/m/b8VNQx5luCCGTN/WQhtmWSObBb9vyI9D7mBR8RL9tzI/gDksHSe79tjE/QrCpPNzZv23M/wljlLZDnl85SHr0r5pDbfuVCMyoZen3yZLmXVYUh6w3yAYrP3bhVTqoPYza7THLdQIncu3XIyV1TdOzLMuu4X95pgl+y5VZQbJa7nbZKXTgxGFiFCwzCvxS9LjOZ9Np5rj18wO6nO4HiQWquclqeuyXfvRnPb+wl0bOLa8cHP8JBLXcMI9XnI3mi+1lbQcvDjDNZsPz12G6X1fs99PD13l4KV1kbjSdl62OdmHlIzNO18Fyev6YT0giC4JrofPnpLglyVTVdO2ULfqry4TozFdSU+hgO1pUSkrS+UYwKl00oxxUnGfJS+NonskjinBrO0OteLws47BTawIRv7/M4o/q75l0yKaLqmSvRjHJNqSDpehP79B1aaT6hoXNqwv7lWGMProeKj1RjgRZ2rzyERYejuoyPqDUgENz5S6bn7CaXFVOp3+cT26te+m6cpFT3jb6rSvp6gUXg3nHMyUqZQq7xngbdnhIT1pXDE3DG2i11mJ6O4/aG/N57Wy7rsjBt3pdl9IXUnN/3FVT0I+Fg91DfI6avcN1Vh/rkWM3jJJjYU0ftcc7IOgcYDG6zWdVRoZPPYwfNUj6XB/j4YOLK9F30KAkaUyijd9wmRxFtzDrUXvb6EF389nNjEe1ptYTB+mDvuF8eYa1e2iOCA9x7VT6Z9a4o/+nOSBbOPDj7XmdZXswLScxDPY1YvqG7TVYXn02iPb6UdVLwpfWo4tSWWCX91s9tdg3S1QeLaZpOryGjmnzWOqDpZqwVVdLm8Bw864LiuyJ2HSrF+fI+yaAC3/PelAkDnx2hPWf21Ynb1sSPJQBlrHxOqyzGBBgEna9DIEv/fNQsLa1Odof2Ev46Gf7D/MyH422kiNQRjK6cVuuoODkMnoD0YAHKdiwuLLJPhtebe8Z+KtYMiyGaRGYRHzSmO4N9EhoCmwjAitgc6PMhIZJQfzWxcARRFEcgWW+CZmu3etmQOaxhOrBYHaz/aNWMg1pCBbjAM4nmXVTxux6qYs0COpCKSLMBc9kQuL8BSh5rqbFYzzg4ER8QYFFoOAm77lqD9aFf8tvibR4lse63HqsastJXJ7vLbOedVuXl2WGARyuVhhs5yLnpAnX5YunVQzoIhlbopINpOJLbUWh1kXMhaFkLJJnLZ7NRa8AMRoXqSr1T/mims5pNfPlkQW0/VSYHiyaZZo+Xl/ykMHZlBqy8+CAFI0BaSGUwZSGZGJxJTCeyTog3KpDF/YgLy0kAyaR5fRL6qKJ6iW6/J89vEFji2TPr3UlLRqDHjowHPKFa+jzmnyIfJmBZTUTKQ2lcAlpyE9vgDSpPGijILkthFPz8PSKhyFUiM9C8py6qDzzCsBtoeavPG+AtqiG4bISwmHDldxAPgLM6kXRqAVWy0GtFm2WOi94mMCgmBXbQigrR9V1MCJPfC1Khc2GN3IEPLCs7tSgMKSn/U0fzmp5ZAFWehno4P6uOLiBj02T5w7GUJl2ZQClIJSp/Ys2IiMH3rB1mraoz73AZeUyI6km/vhghHEQ+2H9ELnDBN1aHrS5IBoW8hqBOffCmaoD06tpdT+c64WHMAHKPSjiSmuhNilbwLLiUlrX+AiL0GFXrcixgI2WB22wl4qQmoDUY/j0yzkuXLXn+hgdDtFMDSzMf3sU+rtU/oDrKkrBZeXUho1uVevVQ2Ru4n3BFh6NITsBkwfPNsHaLnUG8gMoG+ocAeYbk1Db/8rNlBGCpE09CQSLi1sbVgfpuopsA+ZnpYLAua/SHBeUpE/3FnBPcPwjEjhxvBXHFG7kUtnnIXDpbMJoovyBWxGVLTItB6uEaFKJg1evEBlMHBBLlOmWlnkcZQiCQen8ZJJq4ka2o9FosZjPN1zkBhSGb6E/wRrcyrMeECxU6IJ5qpIeKE13WuUr/XItMK8edbmUYYi98dQ1Sg5UyxUtarAbzA2fHOFSo7XFKXGYlmRmN+2ka+hqi0HNYhi4hlKboKo7rJ5uxYfRtEyqGQ7J2WPLGUl9bfL3Tzcb2jX8fu+kZds6vJttbYOvdcU4Zh1aC/NUdXQIZJDn1bWMjG4WHyBHOz27C8UACVoBFyhXOz7QDHn2kTWneTBbI2J8+NB/oV9wK3WQ/kDpGTSDBbcUqHN/bdgD/dxDqk/bQ9553Vt/yf17IX18KKRstlrnEOVFRx+fQsTj74KFGOaOU6+6j5NGhQKhnkHnIWNpyHcessceyjEIu882L0ljfIrkF+aprWAhpm379PmjKklbD60NYVa3XAyfJWyPj+hkiiWe3DVPc/XcBLSqXloAzVPiCkvEoWerS7f1edyklccq5FZVS+mbhnzn4amrnqTYrVLWXqlZ0JoA6vwf5t0qWYRaJSXBgsc2fJKFtUwWAbS5cIq82mq7mGZPpmijixtsivSU+Y2zuJlbZIsUWN+Xd0PJU+HDq3OP4iWI+Vl32YfhAgsm6kDJ1vpgfC4/uGkzuIMl4jjjhffD7DQ87Ne7ZZYN7vdPwX0wyJa79TRfV9UjY1gZ1c9p9c6SXbMKpWjssy75lLexXuMW+X8Ws3l/M7rsHHGU3ZuW7IsWrVMpK/1ZFtZfFGVx75h2GfK9i6Z4MUob2Lblgf5hbmIsp3k+zSwffsKUgSqtEtYqqepRl+eFTvEOl1kl9UvJKFx1vBoWb0/D6/rrfD5ktu+95N/rMGp5nvX3/sms8/W+vGB7pvkXDUEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEH+Pd79R6SY0XtvF1nPyJ/+cvJ/GjM3nv2k6X8bFqQG2QTmu/rIzGBDDELS/E3XIuvlKSH/AGU7i7GCofk5AAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <a href="index.html"><img id="im1" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" width=120px height=25px></a>
+    <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i>
+    <div style="display:inline" id="box">
+        <i class="fa fa-map-marker" style="font-size: 25px; color:red;"></i>
+        <select id="locations" name="locations">
+            <option value="Trivandrum">Trivandrum</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Mumbai">Mumbai</option>
+          </select>
+          |
+          <i class="fa fa-search"></i>
+        <input id="inpu1" type="text" size="80" placeholder="Search for restaurant, cuisine or a dish"/>
+    </div>
+    <button id="signbutton" type="Signup" title="Create New Account">Signup</button>
+    <button id="logbutton" type="Login">Login</button>
+    <div id="nav">
+        <img src="https://image.flaticon.com/icons/png/128/3338/3338557.png" id="images" width=40px height=40px>
+        <a href="index.html">Delivery</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-cutlery" style="color:rgba(0, 174, 255, 0.87)"></i>
+        <a href="dining.html"  id="deli">Dining Out</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-glass"></i>
+        <a href="nightlife.html">Nightlife</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <img id="images" src="https://cloud.githubusercontent.com/assets/9731733/5059821/52b5ece2-6d25-11e4-89ca-11dd39aa1a5b.png" width=40px height=40px>
+        <a href="nutrition.html">Nutrition</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <header>
+        <div id="nav2" style="border-bottom: none;">
+            <button><a href="#">Filters</a></button>
+            <button><a href="#">Rating: 4.0+</a></button>
+            <button><a href="#">Safe and Hygienic</a></button>
+            <button><a href="#">Pure Veg</a></button>
+            <button><a href="#">Delivery Time</a></button>
+            <button><a href="#">Great Offers</a></button>
+        </div>
+    </header>
+    <div>
+        <p id="p1"><b>Dine-out restaurants in Trivandrum</b></p>
+        <table>
+            <tr>
+                <td>
+                    <figure id="fig2" style="margin-left: 240px;">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/2/18694102/620d2bc916f104856737b7ef645ca78f_o2_featured_v2.jpg?output-format=webp" width=300px height=250px>
+                        <figcaption>
+                            <b>Garam Masala Restaurant</b>
+                            <div>Rating: 3.7 (12.2k Delivery Reviews)</div>
+                            <div>Mughlai, North Indian, Chinese, ...</div>
+                            <div><span>&#8377</span>100 for one 24 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure id="fig2">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/8/19135488/ec3f9db23682718b4077fe00f627630d_o2_featured_v2.jpg" width=300px height=250px>
+                        <figcaption>
+                            <b>Zam Zam palayam</b>
+                            <div>Rating: 4.1 (11.7k Delivery Reviews)</div>
+                            <div>Arabian, North Indian, Chinese, ...</div>
+                            <div><span>&#8377</span>200 for one 27 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure id="fig2">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/1/19158681/d70991d53a656582d767468e5679d7cb_o2_featured_v2.jpg" width=300px height=250px>
+                        <figcaption>
+                            <b>Hotel Chinnus</b>
+                            <div>Rating: 3.6 (11.3k Delivery Reviews)</div>
+                            <div>Mughlai, South Indian, Chinese, ...</div>
+                            <div><span>&#8377</span>100 for one 33 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure id="fig2" style="margin-left: 240px;">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/3/18690683/2ac1f4c465d9178c4ba29f431770d31e_o2_featured_v2.jpg?output-format=webp" width=300px height=250px>
+                        <figcaption>
+                            <b>Valiyakadayil Restaurant</b>
+                            <div>Rating: 3.6 (11.3k Delivery Reviews)</div>
+                            <div>Mughlai, North Indian, Chinese, ...</div>
+                            <div><span>&#8377</span>100 for one 33 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure id="fig2">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/5/18693975/2df2854047284441b24c723ff71a9fc3_o2_featured_v2.jpg?output-format=webp" width=300px height=250px>
+                        <figcaption>
+                            <b>Supreme Bakers</b>
+                            <div>Rating: 4.2 (4.9k Delivery Reviews)</div>
+                            <div>Bakery</div>
+                            <div><span>&#8377</span>100 for one 28 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure id="fig2">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/chains/1/18691271/9410759d611db9c62c3acc23c1f27e06_o2_featured_v2.jpg?output-format=webp" width=300px height=250px>
+                        <figcaption>
+                            <b>KFC</b>
+                            <div>Rating: 4.0 (5.6k Delivery Reviews)</div>
+                            <div>Burgers, Fast Food, Desserts, ...</div>
+                            <div><span>&#8377</span>200 for one 24 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure id="fig2" style="margin-left: 240px;">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/chains/4/18689914/6e118fe83193856b9ea9e78993344529_o2_featured_v2.jpg?output-format=webp" width=300px height=250px>
+                        <figcaption>
+                            <b>Domino's Pizza</b>
+                            <div>Rating: 3.7 (12.2k Delivery Reviews)</div>
+                            <div>Fast Food, Pizza, Deserts, ...</div>
+                            <div><span>&#8377</span>150 for one 22 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure id="fig2">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/6/19318576/1ddf4872a509ad170169fa06e040f8d7_o2_featured_v2.jpg?output-format=webp" width=300px height=250px>
+                        <figcaption>
+                            <b>Open House</b>
+                            <div>Rating: 4.2 (3.7k Delivery Reviews)</div>
+                            <div>Kerala, South Indian, Chinese, ...</div>
+                            <div><span>&#8377</span>150 for one 29 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure id="fig2">
+                        <img id="im2" src="https://b.zmtcdn.com/data/pictures/1/18693741/a10df3b2cc1186b6666d57d3b2cee08f_o2_featured_v2.jpg?output-format=webp" width=300px height=250px>
+                        <figcaption>
+                            <b>Kings Restaurant</b>
+                            <div>Rating: 3.6 (14.1k Delivery Reviews)</div>
+                            <div>South Indian, North Indian, Chinese, ...</div>
+                            <div><span>&#8377</span>150 for one 23 min.</div>
+                        </figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="enddiv">
+        End of search results &#128530
+    </div>
+    <div id=detail>
+        <br><br><br><br><br>
+        <span id="detailspan">Explore other options for you here</span>
+        <br><br><br>
+        <span id="detailspan" style="font-size: 30px;">Popular cuisines near me</span>
+        <br><br><br>
+        <ul>
+            <li>Arabian food near me</li>
+            <li>Bakery food near me</li>
+            <li>Beverages food near me</li>
+            <li>Biryani food near me</li>
+            <li>Burger food near me</li>
+            <li>Cafe food near me</li>
+            <li>Chinese food near me</li>
+            <li>Continental food near me</li>
+            <li>Desserts food near me</li>
+            <li>Ice Cream food near me</li>
+            <li>Italian food near me</li>
+            <li>Juices food near me</li>
+            <li>Kerala food near me</li>
+            <li>Lebanese food near me</li>
+            <li>Mughlai food near me</li>
+            <li>North Indian food near me</li>
+            <li>Pizza food near me</li>
+            <li>Seafood food near me</li>
+            <li>South Indian food near me</li>
+            <li>Street food near me</li>
+        </ul>
+        <br><br><br><br><br>
+        <span id="detailspan" style="font-size: 30px;">Popular restaurant types near me</span>
+        <ul>
+            <li>Bakeries near me</li>
+            <li>Bars near me</li>
+            <li>Beverages near me</li>
+            <li>Cafes near me</li>
+            <li>Casual Dining near me</li>
+            <li>Dessert Parlors near me</li>
+            <li>Fine Dining near me</li>
+            <li>Food Courts near me</li>
+            <li>Food Trucks near me</li>
+            <li>Kiosks near me</li>
+            <li>Quick Bites near me</li>
+            <li>Sweet Shops near me</li>
+        </ul>
+        <br><br><br><br><br>
+        <span id="detailspan" style="font-size: 30px;">Top Restaurant Chains</span>
+        <br><br>
+        <ul>
+            <li>KFC</li>
+            <li>MCDonald's</li>
+            <li>Pizza Hut</li>
+        </ul>
+        <br><br><br><br><br>
+        <span id="detailspan" style="font-size: 30px;">Cities We Deliver To</span>
+        <br><br>
+        <table id="citytable">
+            <tr>
+                <td id="citydata">Delhi NCR</td>
+                <td id="citydata">Kolkata</td>
+                <td id="citydata">Mumbai</td>
+                <td id="citydata">Bengaluru</td>
+                <td id="citydata">Pune</td>
+            </tr>
+            <tr>
+                <td id="citydata">Hyderabad</td>
+                <td id="citydata">Chennai</td>
+                <td id="citydata">Lucknow</td>
+                <td id="citydata">Kochi</td>
+                <td id="citydata">Jaipur</td>
+            </tr>
+            <tr>
+                <td id="citydata">Ahmedabad</td>
+                <td id="citydata">Chandigarh</td>
+                <td id="citydata">Goa</td>
+                <td id="citydata">Indore</td>
+                <td id="citydata">Nashik</td>
+            </tr>
+            <tr>
+                <td id="citydata">Ooty</td>
+                <td id="citydata">Shimla</td>
+                <td id="citydata">Ludhiana</td>
+                <td id="citydata">Guwahati</td>
+                <td id="citydata">Amritsar</td>
+            </tr>
+            <tr>
+                <td id="citydata">Kanpur</td>
+                <td id="citydata">Allahabad</td>
+                <td id="citydata">Aurangabad</td>
+                <td id="citydata">Bhopal</td>
+                <td id="citydata">Ranchi</td>
+            </tr>
+        </table>
+        </div>
+</body>
+</html>

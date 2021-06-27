@@ -1,0 +1,122 @@
+#im1, #nav{
+    margin-left: 240px;
+    margin-top: 10px;
+}
+#box{
+    display: inline;
+    border : 1px solid black;
+    padding: 10px;
+    margin-left:10px;
+    border-radius: 10px;
+}
+select, input{
+    border: 100px;
+    outline : none;
+}
+#logbutton, #signbutton{
+    padding:10px;
+    margin-left:10px;
+    float:right;
+    cursor: pointer;
+}
+#locations{
+    font-family: monospace;
+    cursor: pointer;
+}
+#nav{
+    margin-top: 30px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+#nav a:link, #nav2 a:link{
+    color:rgba(0, 0, 0, 0.623);
+    text-decoration: none;
+}
+#nav a:hover, a:active, #deli{
+    padding-bottom: 10px;
+    border-bottom: 2px solid red;
+    color: red;
+}
+a:visited{
+    color:rgba(0, 0, 0, 0.623);
+}
+#images{
+    filter: grayscale(100%);
+}
+#nav2{
+    margin-top: 20px;
+    margin-left: 240px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    background-attachment: fixed;
+    position: sticky;
+    top : 0px;
+    z-index: 1;
+}
+#sec3{
+    background-color: rgba(128, 128, 128, 0.363);
+    height:320px;
+}
+#p1{
+    margin-left: 240px;
+    font-size: 30px;
+    font-family: cursive;
+}
+#fig1{
+    margin: 0px;
+    display : inline-block;
+    width:25%;
+    text-align:center;
+}
+#fig2{
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    font-size: larger;
+    cursor : pointer;
+}
+#im2{
+    border-radius: 20px;
+}
+#enddiv{
+    margin-top:40px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:150px;
+}
+#detail{
+    background-color: whitesmoke;
+    height:1200px;
+}
+#contact{
+    background-color: lightgray;
+    height:400px;
+}
+#detailspan{
+    margin-left: 240px;
+    font-size:40px;
+}
+li{
+    display: inline-block;
+    font-size: 18px;
+    opacity: 0.8;
+}
+li::before{
+    content: '\00a0\2022\00a0\00a0';
+}
+ul{
+    margin-left: 200px;
+}
+#citytable{
+    margin-left: 240px;
+}
+#citydata{
+    padding-right:90px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    opacity:0.8;
+}
+#but{
+    padding: 10px;
+}
